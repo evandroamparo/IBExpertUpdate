@@ -9,7 +9,7 @@ environment:
 build:
   verbosity: minimal
 build_script:
-- ps: '"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\bin\msbuild.exe" IBExpertUpdate.sln'
+- ps: '& ''C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe'' IBExpertUpdate.sln'
 test_script:
 - ps: "if(!(Test-Path \"IBExpertUpdate\\bin\\Release\\setup_personal.exe\"))\n{\n    Write-Host \"Download não foi concluído.\"\n    exit 1\n}"
 artifacts:
