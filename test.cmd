@@ -1,7 +1,10 @@
 @echo off
 
-set EXE=IBExpertUpdate\bin\Release\IBExpertUpdate.exe
-set DOWNLOAD=IBExpertUpdate\bin\Release\setup_personal.exe
+set RELEASE=IBExpertUpdate\bin\Release
+set EXE=IBExpertUpdate.exe
+set DOWNLOAD=setup_personal.exe
+
+cd %RELEASE%
 
 if exist %DOWNLOAD% (
     del %DOWNLOAD%
