@@ -1,0 +1,13 @@
+version: 1.0.{build}
+configuration: Release
+environment:
+  IBEXPERT_EMAIL:
+    secure: BmfewXWhVrOwF+V9qErqnu63YtnnifLxZkxqa24oSsA=
+  IBEXPERT_PASSWORD:
+    secure: pe+xVz+nPncjckFDNKlgLw==
+build:
+  verbosity: minimal
+test_script:
+- ps: "if(!(Test-Path \"IBExpertUpdate\\bin\\Release\\setup_personal.exe\"))\n{\n    Write-Host \"Download não foi concluído.\"\n    exit 1\n}"
+artifacts:
+- path: IBExpertUpdate\bin\Release\setup_personal.exe
