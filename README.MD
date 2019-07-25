@@ -1,1 +1,1 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/p56j1nvcam8fon74?svg=true)](https://ci.appveyor.com/project/evandroamparo/ibexpertupdate)
+[![Build status](https://ci.appveyor.com/api/projects/status/2y76batt38u7cv9e?svg=true)](https://ci.appveyor.com/project/evandroamparo/ibexpertupdate)
